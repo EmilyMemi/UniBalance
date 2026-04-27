@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniBalance App</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- HOME -->
+    <div id="home" class="screen">
+        <div class="header">UniBalance 💜</div>
+
+        <div class="card">
+            <h3>🧠 ¿Cómo te sientes hoy?</h3>
+            <p>Registra tu estado emocional</p>
+            <div class="btn" onclick="irATest()">Responder test</div>
+        </div>
+
+        <div class="card">
+            <h3>🌿 Microterapia</h3>
+            <p>Respiración guiada • 5 minutos</p>
+            <div class="btn">Comenzar</div>
+        </div>
+
+        <div class="card">
+            <h3>💬 Comunidad</h3>
+            <p>Conecta con estudiantes de tu carrera</p>
+            <div class="btn">Entrar</div>
+        </div>
+
+        <div class="card">
+            <h3>🔥 Tu progreso</h3>
+            <p>Racha: 5 días</p>
+        </div>
+    </div>
+
+    <!-- TEST -->
+    <div id="test" class="screen hidden">
+        <div class="header">Test emocional 🧠</div>
+
+        <div class="card">
+            <h3 id="pregunta">Pregunta</h3>
+            <div id="opciones"></div>
+
+            <div class="btn" onclick="siguientePregunta()">Siguiente</div>
+        </div>
+    </div>
+
+    <!-- RESULTADO -->
+    <div id="resultado" class="screen hidden">
+        <div class="header">Resultado 💜</div>
+
+        <div class="card">
+            <h3 id="nivel"></h3>
+            <p id="mensaje"></p>
+
+            <!-- 💥 CAJA PERSONALIZADA -->
+            <p id="caja"></p>
+
+            <div class="btn" onclick="volverInicio()">Volver al inicio</div>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <div class="nav">
+        <div>Inicio</div>
+        <div>Bienestar</div>
+        <div>Comunidad</div>
+        <div>Perfil</div>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

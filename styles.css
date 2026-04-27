@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor app */
+.app {
+    width: 360px;
+    height: 700px;
+    background: linear-gradient(180deg, #111827, #020617);
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Pantallas */
+.screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Header */
+.header {
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #c4b5fd;
+}
+
+/* Cards */
+.card {
+    background: #1e293b;
+    margin: 12px;
+    padding: 15px;
+    border-radius: 18px;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    margin: 14px;
+    padding: 18px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+
+    /* efecto vidrio moderno */
+    backdrop-filter: blur(10px);
+
+    /* sombras pro */
+    box-shadow: 
+        0 8px 20px rgba(0,0,0,0.4),
+        inset 0 1px 0 rgba(255,255,255,0.05);
+
+    transition: all 0.3s ease;
+}
+
+/* Hover elegante */
+.card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 
+        0 12px 25px rgba(0,0,0,0.6),
+        0 0 10px rgba(167,139,250,0.3);
+}
+
+/* Línea decorativa top */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #a78bfa, #34d399);
+}
+
+/* Título */
+.card h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+/* Texto */
+.card p {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-top: 6px;
+}
+
+/* Botones */
+.btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-top: 12px;
+    border-radius: 12px;
+
+    background: linear-gradient(90deg, #a78bfa, #34d399);
+    
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(167,139,250,0.5);
+}
+
+/* Opciones test */
+.option {
+    background: #334155;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: #475569;
+}
+
+/* Navegación */
+.nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    background: #020617;
+    font-size: 12px;
+    color: #64748b;
+}
